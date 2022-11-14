@@ -33,7 +33,7 @@ function makeBoard() {
 function makeHtmlBoard() {
   // DONE TODO: get "htmlBoard" variable from the item in HTML w/ID of "board"
   const htmlBoard = document.getElementById('board');
-  // DONE TODO: add comment for this code // what? create table row, set each row's ID to 'column-top', add a click listener to each row, when clicked run handleClick
+  // DONE TODO: add comment for this code // what? creates a table row, set each row's ID to 'column-top', add a click listener to each row, when clicked run handleClick
   const top = document.createElement('tr');
   top.setAttribute('id', 'column-top');
   top.addEventListener('click', handleClick);
@@ -45,7 +45,7 @@ function makeHtmlBoard() {
   }
   htmlBoard.append(top);
 
-  //DONE  TODO: add comment for this code // creates a row, total rows will equal Height number, creates a cell in each row, num of cells will be equal to Width. Each cell's ID will equal y - x coordinates. Cell is appended to row and row is appended to htmlBoard.
+  //DONE  TODO: add comment for this code // creates a row, total rows will equal Height number, creates a cell in each row, num of cells will be equal to Width. Each cell's ID will equal y - x coordinates. Cell is appended to row and row is appended to htmlBoard. Similar to how the original board was created by using Height and Width variables as cycle run limits for loops running to create each table data point within each table row.
   for (let y = 0; y < HEIGHT; y++) {
     const row = document.createElement('tr');
     for (let x = 0; x < WIDTH; x++) {
