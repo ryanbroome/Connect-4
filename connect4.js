@@ -17,15 +17,14 @@ const board = [];
  *    board = array of rows, each row is array of cells  (board[y][x])
  */
 //21-28
-function makeBoard(board) {
+function makeBoard() {
   for (let i = 0; i < HEIGHT; i++) {
     let rowArray = [];
     for (let j = 0; j < WIDTH; j++) {
-      rowArray.push([null]);
+      rowArray.push(null);
     }
     board.push(rowArray);
   }
-  return board;
   // DONE?  TODO: set "board" to empty HEIGHT x WIDTH matrix array
 }
 
