@@ -1,18 +1,15 @@
 a {
   background-color: rgb(225, 20, 20);
-
-  padding: 5px 30px;
-  color: rgb(255, 255, 255);
-  /* Choose a better position */
-  text-decoration: none;
-  font-size: larger;
+  bottom: 10px;
   border-bottom-right-radius: 55%;
   border-bottom-left-radius: 55%;
   border-top: solid black 15px;
-
-  position: fixed;
-  bottom: 10px;
+  color: rgb(255, 255, 255);
+  padding: 5px 30px;
+  font-size: larger;
   right: 10px;
+  position: fixed;
+  text-decoration: none;
 }
 
 body {
@@ -20,12 +17,11 @@ body {
 }
 
 div#game {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100vw;
+  display: flex;
   height: 90vh;
-  /* background-color: beige; */
+  justify-content: center;
+  width: 100vw;
 }
 
 table {
@@ -41,49 +37,46 @@ table {
 /* DONE TODO: make pieces red/blue,  depending on player 1/2 piece */
 .piece.p1 {
   /* DONE TODO: make into circles */
-  margin: 5px;
   background-color: #ff0000;
-  width: 95%;
-  height: 90%;
   border-radius: 50%;
+  height: 90%;
+  margin: 5px;
+  width: 95%;
 }
 
 .piece.p2 {
   /* DONE TODO: make into circles */
-  margin: 5px;
-  width: 95%;
-  height: 90%;
-  position: inherit;
   background-color: #0824fe;
   border-radius: 50%;
+  height: 90%;
+  margin: 5px;
+  position: inherit;
+  width: 95%;
 }
 
 /* game board table */
 
 #board td {
-  width: 100px;
-  height: 100px;
-  border: solid 2px rgb(96, 190, 65, .35);
-  /* My updates below */
   background-color: rgba(13, 42, 3, 0.853);
+  border: solid 2px rgb(96, 190, 65, .35);
   border-radius: 25%;
-  /* My position updates below */
+  height: 100px;
+  width: 100px;
 }
 
 #board td:hover {
-  width: 50px;
-  height: 50px;
-  border: solid 5px rgb(201, 35, 35, .99);
-
   background-color: rgba(201, 35, 35, 0.35);
   border-radius: 25%;
+  border: solid 5px rgb(201, 35, 35, .99);
+  height: 50px;
+  width: 50px;
 }
 
 /* column-top is table row of clickable areas for each column */
 
 #column-top td {
-  border-radius: 50%;
   background-color: rgba(96, 190, 65, 0.853);
+  border-radius: 50%;
   border-color: rgba(152, 83, 216, 0.35);
 }
 
