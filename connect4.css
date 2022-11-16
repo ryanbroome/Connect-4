@@ -16,7 +16,7 @@ a {
 }
 
 body {
-  background-color: rgba(193, 218, 196, 0.99);
+  background-color: rgba(203, 220, 205, 0.99);
 }
 
 div#game {
@@ -29,8 +29,8 @@ div#game {
 }
 
 table {
-  width: 90vw;
-  height: 90vh;
+  width: 70vw;
+  height: 85vh;
 }
 
 /* DARK MODE? CHECKBOX OR DROPDOWN TOGGLE? */
@@ -65,7 +65,7 @@ table {
   height: 100px;
   border: solid 2px rgb(96, 190, 65, .35);
   /* My updates below */
-  background-color: rgba(96, 190, 65, .99);
+  background-color: rgba(13, 42, 3, 0.853);
   border-radius: 25%;
   /* My position updates below */
 }
@@ -83,12 +83,14 @@ table {
 
 #column-top td {
   border-radius: 50%;
+  background-color: rgba(96, 190, 65, 0.853);
+  border-color: rgba(152, 83, 216, 0.35);
 }
 
 #column-top td:hover {
-  background-color: rgba(83, 216, 88, 0.351);
+  background-color: rgba(212, 216, 83, 0.351);
   border-radius: 50%;
-  border-color: rgba(83, 206, 87, 0.99);
+  border-color: rgba(212, 216, 83, 0.99);
   border-width: 5px;
   border-style: solid;
 }
