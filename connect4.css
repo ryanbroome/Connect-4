@@ -1,64 +1,94 @@
 a {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: rgb(225, 20, 20);
+
+  padding: 5px 30px;
+  color: rgb(255, 255, 255);
+  /* Choose a better position */
   text-decoration: none;
   font-size: larger;
-  border-radius: 20%;
+  border-bottom-right-radius: 55%;
+  border-bottom-left-radius: 55%;
+  border-top: solid black 15px;
+
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
 }
 
 body {
-  background-color: rgb(99, 187, 139);
+  background-color: rgba(193, 218, 196, 0.99);
 }
 
+div#game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+  /* background-color: beige; */
+}
+
+table {
+  width: 90vw;
+  height: 90vh;
+}
+
+/* DARK MODE? CHECKBOX OR DROPDOWN TOGGLE? */
 
 /* pieces are div within game table cells: draw as colored circles */
 
-.piece {
-  /* TODO: make into circles */
-  margin: 5px;
-  width: 80%;
-  height: 80%;
-}
 
-/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+/* DONE TODO: make pieces red/blue,  depending on player 1/2 piece */
 .piece.p1 {
-  /* TODO: make into circles */
+  /* DONE TODO: make into circles */
   margin: 5px;
   background-color: #ff0000;
-  width: 80%;
-  height: 80%;
-  border-radius: 50%
+  width: 95%;
+  height: 90%;
+  border-radius: 50%;
 }
 
 .piece.p2 {
-  /* TODO: make into circles */
+  /* DONE TODO: make into circles */
   margin: 5px;
-  width: 80%;
-  height: 80%;
-  background-color: #1d81eb;
+  width: 95%;
+  height: 90%;
+  position: inherit;
+  background-color: #0824fe;
   border-radius: 50%;
 }
 
 /* game board table */
+
 #board td {
+  width: 100px;
+  height: 100px;
+  border: solid 2px rgb(96, 190, 65, .35);
+  /* My updates below */
+  background-color: rgba(96, 190, 65, .99);
+  border-radius: 25%;
+  /* My position updates below */
+}
+
+#board td:hover {
   width: 50px;
   height: 50px;
-  border: solid 1px #666;
+  border: solid 5px rgb(201, 35, 35, .99);
 
-  background-color: rgb(0, 104, 104);
+  background-color: rgba(201, 35, 35, 0.35);
+  border-radius: 25%;
 }
 
 /* column-top is table row of clickable areas for each column */
 
 #column-top td {
-  border: dashed 2px rgb(106, 242, 131);
   border-radius: 50%;
 }
 
 #column-top td:hover {
-  background-color: gold;
+  background-color: rgba(83, 216, 88, 0.351);
   border-radius: 50%;
-  border-color: rgb(238, 183, 32);
-  border-width: 2px;
+  border-color: rgba(83, 206, 87, 0.99);
+  border-width: 5px;
   border-style: solid;
 }
